@@ -39,7 +39,7 @@ class PlatformProvider extends OrchidServiceProvider
 
             Menu::make('Reporte de ventas')
                 ->icon('bar-chart')
-                ->route('platform.notfound'),
+                ->route('platform.ventas.report'),
 
 
             Menu::make('Reporte de utilidades')
