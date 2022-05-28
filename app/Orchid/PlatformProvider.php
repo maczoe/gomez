@@ -44,7 +44,7 @@ class PlatformProvider extends OrchidServiceProvider
 
             Menu::make('Reporte de utilidades')
                 ->icon('money')
-                ->route('platform.notfound')
+                ->route('platform.utilidad.report')
                 ->divider(),
 
 

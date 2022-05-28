@@ -29,6 +29,7 @@ use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
+use App\Orchid\Screens\ventas\ReporteUtilidadesScreen;
 use App\Orchid\Screens\ventas\ReporteVentasScreen;
 use App\Orchid\Screens\ventas\VentaEditScreen;
 use App\Orchid\Screens\ventas\VentaListScreen;
@@ -178,5 +179,8 @@ Route::screen('inventarios', ReporteScreen::class)
 
 Route::screen('ventas/reporte', ReporteVentasScreen::class)
     ->name('platform.ventas.report');
+
+Route::screen('utilidad/reporte', ReporteUtilidadesScreen::class)
+    ->name('platform.utilidad.report');
 
 Route::screen('notfound', NoDisponible::class)->name('platform.notfound');
