@@ -59,11 +59,11 @@ class PlatformProvider extends OrchidServiceProvider
 
             Menu::make('Entradas')
                 ->icon('login')
-                ->route('platform.notfound'),
+                ->route('platform.entrada.list'),
 
             Menu::make('Salidas')
                 ->icon('logout')
-                ->route('platform.notfound'),
+                ->route('platform.salida.list'),
 
             Menu::make('Reporte de inventarios')
                 ->icon('bar-chart')

@@ -14,11 +14,15 @@ use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
 use App\Orchid\Screens\Examples\NoDisponible;
 use App\Orchid\Screens\gastos\GastoEditScreen;
 use App\Orchid\Screens\gastos\GastoListScreen;
+use App\Orchid\Screens\inventarios\EntradasEditScreen;
+use App\Orchid\Screens\inventarios\EntradasListScreen;
 use App\Orchid\Screens\inventarios\ProductoEditScreen;
 use App\Orchid\Screens\inventarios\ProductoListScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\inventarios\ProveedorEditScreen;
 use App\Orchid\Screens\inventarios\ProveedorListScreen;
+use App\Orchid\Screens\inventarios\SalidasEditScreen;
+use App\Orchid\Screens\inventarios\SalidasListScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
@@ -154,5 +158,17 @@ Route::screen('venta/{venta?}', VentaEditScreen::class)
 
 Route::screen('ventas', VentaListScreen::class)
     ->name('platform.venta.list');
+
+Route::screen('entrada/{movimiento?}', EntradasEditScreen::class)
+    ->name('platform.entrada.edit');
+
+Route::screen('entradas', EntradasListScreen::class)
+    ->name('platform.entrada.list');
+
+Route::screen('salida/{movimiento?}', SalidasEditScreen::class)
+    ->name('platform.salida.edit');
+
+Route::screen('salidas', SalidasListScreen::class)
+    ->name('platform.salida.list');
 
 Route::screen('notfound', NoDisponible::class)->name('platform.notfound');
