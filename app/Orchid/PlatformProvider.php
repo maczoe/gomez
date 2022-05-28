@@ -67,7 +67,7 @@ class PlatformProvider extends OrchidServiceProvider
 
             Menu::make('Reporte de inventarios')
                 ->icon('bar-chart')
-                ->route('platform.notfound')
+                ->route('platform.inventarios.list')
                 ->divider(),
 
             Menu::make('Gastos')

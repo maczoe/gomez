@@ -21,6 +21,7 @@ use App\Orchid\Screens\inventarios\ProductoListScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\inventarios\ProveedorEditScreen;
 use App\Orchid\Screens\inventarios\ProveedorListScreen;
+use App\Orchid\Screens\inventarios\ReporteScreen;
 use App\Orchid\Screens\inventarios\SalidasEditScreen;
 use App\Orchid\Screens\inventarios\SalidasListScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
@@ -170,5 +171,8 @@ Route::screen('salida/{movimiento?}', SalidasEditScreen::class)
 
 Route::screen('salidas', SalidasListScreen::class)
     ->name('platform.salida.list');
+
+Route::screen('inventarios', ReporteScreen::class)
+    ->name('platform.inventarios.list');
 
 Route::screen('notfound', NoDisponible::class)->name('platform.notfound');
